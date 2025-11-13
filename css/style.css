@@ -1,0 +1,56 @@
+*{margin: 0;
+}
+ html {
+    font-family: "Roboto", sans-serif;
+ }
+
+section {
+    max-width: 1158px;
+    margin: 0 auto;
+    display: flex;
+}
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.image-block {
+    text-align: center;
+    width: 30%; 
+    margin-bottom: 20px;
+}
+.image-block img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 15px;
+}
+.zaglav {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+.prostoi {
+    font-size: 20px;
+    font-weight: normal;
+    color: #696161;
+}
+.oglav {
+     font-size: 30px;
+     font-weight: bold;
+     color: #000000;
+
+}
+  .centered-text {
+          text-align: center;
+        }
+@media(max-width:756px){
+    section {
+        flex-direction: column;
+    }
+    .corner-text,
+    .image-block,
+    .centered-text{
+        width: 100%;
+    }
+}
